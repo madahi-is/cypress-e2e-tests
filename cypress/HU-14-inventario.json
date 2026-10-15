@@ -1,0 +1,122 @@
+{
+  "note": "Inventario estático; no ejecuta callbacks ni representa resultados Cypress.",
+  "count": 29,
+  "cases": [
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-01 admin.e2e abre personal desde el detalle del examen compartido"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-01 docente1.hu14 abre personal desde el detalle del examen compartido"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-01 docente2.hu14 abre personal desde el detalle del examen compartido"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-02 sección de personal separada de las habilitaciones"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-03 control no asigna ni quita por interfaz o endpoint"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-03 estudiante no asigna ni quita por interfaz o endpoint"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU14-03 visitante no asigna ni quita por interfaz o endpoint"
+    },
+    {
+      "spec": "asignacion.cy.ts",
+      "name": "HU14-05 admin.e2e asigna y persiste tras recargar sin cambios laterales"
+    },
+    {
+      "spec": "asignacion.cy.ts",
+      "name": "HU14-05 docente1.hu14 asigna y persiste tras recargar sin cambios laterales"
+    },
+    {
+      "spec": "asignacion.cy.ts",
+      "name": "HU14-05 docente2.hu14 asigna y persiste tras recargar sin cambios laterales"
+    },
+    {
+      "spec": "asignacion.cy.ts",
+      "name": "HU14-06 varios miembros permanecen asignados al mismo examen"
+    },
+    {
+      "spec": "asignacion.cy.ts",
+      "name": "HU14-10 admin.e2e recibe mensaje exacto de duplicado por endpoint aunque selector lo oculta"
+    },
+    {
+      "spec": "asignacion.cy.ts",
+      "name": "HU14-10 docente1.hu14 recibe mensaje exacto de duplicado por endpoint aunque selector lo oculta"
+    },
+    {
+      "spec": "desasignacion.cy.ts",
+      "name": "HU14-11 admin.e2e quita solo la relación y preserva usuario, rol y otras asignaciones"
+    },
+    {
+      "spec": "desasignacion.cy.ts",
+      "name": "HU14-11 docente1.hu14 quita solo la relación y preserva usuario, rol y otras asignaciones"
+    },
+    {
+      "spec": "desasignacion.cy.ts",
+      "name": "HU14-12 quitar y volver a asignar no duplica relaciones"
+    },
+    {
+      "spec": "desasignacion.cy.ts",
+      "name": "HU14-13 mismo miembro en exámenes con fechas/horas distintas y detalles aislados"
+    },
+    {
+      "spec": "estados.cy.ts",
+      "name": "HU14-14 sección sin personal muestra estado vacío y candidatos"
+    },
+    {
+      "spec": "estados.cy.ts",
+      "name": "HU14-15 al asignar todos no quedan opciones y registro se deshabilita"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-04 selector ofrece exclusivamente el rol control"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-07 admin.e2e no puede asignar id de administrador"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-07 admin.e2e no puede asignar id de docente"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-07 admin.e2e no puede asignar id de estudiante"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-07 docente1.hu14 no puede asignar id de administrador"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-07 docente1.hu14 no puede asignar id de docente"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-07 docente1.hu14 no puede asignar id de estudiante"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-08 adicional: selección vacía muestra validación local y no envía registro"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-09 adicional: endpoint rechaza ID vacío"
+    },
+    {
+      "spec": "selector.cy.ts",
+      "name": "HU14-09 adicional: endpoint rechaza ID inexistente"
+    }
+  ]
+}

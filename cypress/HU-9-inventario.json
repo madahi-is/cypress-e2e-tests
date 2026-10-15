@@ -1,0 +1,238 @@
+{
+  "note": "Inventario estático de casos registrados; no es una ejecución Cypress ni resultados.",
+  "count": 58,
+  "cases": [
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU09-01 · administrador accede desde menú y al detalle de inscritos"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU09-02 docente · sin menú, URL ni ninguna escritura de grupos/inscripciones"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU09-02 control · sin menú, URL ni ninguna escritura de grupos/inscripciones"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU09-02 estudiante · sin menú, URL ni ninguna escritura de grupos/inscripciones"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU09-03 · anónimo no accede al módulo ni escribe datos"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-24 · reasigna docente y persiste sin alterar grupo ni relaciones"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-25 UI · exige seleccionar docente al reasignar"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-25 ausente · rechaza reasignación inválida sin cambios"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-25 inexistente · rechaza reasignación inválida sin cambios"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-25 texto · rechaza reasignación inválida sin cambios"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-26 · elimina un grupo libre y persiste la baja"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-27 · UI bloquea eliminar grupo con inscrito y muestra mensaje exacto"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-28 · UI protege grupo cuyos inscritos se relacionan con examen"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-29 B · DELETE directo preserva inscripciones y exámenes asociados"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-29 C · DELETE directo preserva inscripciones y exámenes asociados"
+    },
+    {
+      "spec": "gestion.cy.ts",
+      "name": "HU09-30 · inscribir bloquea eliminación; dar de baja permite eliminar grupo libre"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-16 · muestra asignatura, nombre de grupo, Gestión y docente reales"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-17 · recorre todas las páginas sin omisiones ni duplicados y permite volver"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-18 · filtra solo por Asignatura y conserva el filtro al recargar"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-19 · filtra solo por Gestión y conserva el filtro al recargar"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-20 · aplica ambos filtros y los mantiene entre páginas"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-21 · combinación sin coincidencias muestra lista vacía"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-22 · limpiar restaura ambos filtros y el listado completo"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-23 asignatura inexistente · rechaza filtros inválidos en servidor"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-23 asignatura texto · rechaza filtros inválidos en servidor"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU09-23 gestion larga · rechaza filtros inválidos en servidor"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-04 A · registra por UI con Gestión 2026-2 y persiste"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-04 B · registra por UI con Gestión 2026-2 y persiste"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-04 1A · registra por UI con Gestión 2026-2 y persiste"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-04 14 · registra por UI con Gestión 2026-2 y persiste"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-05 · servidor acepta Gestión semestral sin depender de validación UI"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-06 · UI exige todos los campos y no escribe el formulario vacío"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-07 id_asignatura · servidor rechaza campo obligatorio ausente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-07 id_usuario · servidor rechaza campo obligatorio ausente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-07 gestion · servidor rechaza campo obligatorio ausente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-07 nombre_grupo · servidor rechaza campo obligatorio ausente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-08 abc · Gestión malformada rechazada en UI y servidor"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-08 26-2 · Gestión malformada rechazada en UI y servidor"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-09 · listas de alta y reasignación incluyen exclusivamente los docentes"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-10 POST administrador · rechaza asignar usuario que no es docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-10 PATCH administrador · rechaza asignar usuario que no es docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-10 POST personal de control de ingreso · rechaza asignar usuario que no es docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-10 PATCH personal de control de ingreso · rechaza asignar usuario que no es docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-10 POST estudiante · rechaza asignar usuario que no es docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-10 PATCH estudiante · rechaza asignar usuario que no es docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-11 id_asignatura inexistente · valida referencia y tipo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-11 id_asignatura texto · valida referencia y tipo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-11 id_usuario inexistente · valida referencia y tipo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-11 id_usuario texto · valida referencia y tipo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-12 docente1.e2e · rechaza triple duplicada con mensaje exacto de HU"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-12 docente2.e2e · rechaza triple duplicada con mensaje exacto de HU"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-13 · UI muestra el mensaje exacto de triple duplicada"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-14 nombre · permite otra combinación y varios grupos del mismo docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-14 asignatura · permite otra combinación y varios grupos del mismo docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-14 gestion · permite otra combinación y varios grupos del mismo docente"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-15 50 · límite actual del nombre y blancos"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-15 51 · límite actual del nombre y blancos"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU09-15 0 · límite actual del nombre y blancos"
+    }
+  ]
+}

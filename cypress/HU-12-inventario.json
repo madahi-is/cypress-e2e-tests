@@ -1,0 +1,242 @@
+{
+  "note": "Inventario estático; no ejecuta callbacks ni representa resultados Cypress.",
+  "count": 59,
+  "cases": [
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-01 personal de control de ingreso accede desde navegación"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-02 personal de control de ingreso accede por URL y registra por endpoint"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-01 docente accede desde navegación"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-02 docente accede por URL y registra por endpoint"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-01 administrador accede desde navegación"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-02 administrador accede por URL y registra por endpoint"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-03 estudiante rechazado por navegación, URL y registro"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU12-04 visitante no accede ni registra"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU12-29 catálogo cerrado rechaza tipo externo por endpoint"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU12-30 adicional: relación inexistente id_examen rechazada"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU12-30 adicional: relación inexistente id_estudiante rechazada"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU12-31 adicional: rango invertido rechazado por validación actual"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU12-32 caracteriza texto largo sin límite max:1000 activo"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-25 tarjetas no ofrecen edición ni eliminación"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-26 registro real de rutas contiene solo índice y registro"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 personal de control de ingreso no modifica datos con PUT"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 personal de control de ingreso no modifica datos con PATCH"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 personal de control de ingreso no modifica datos con DELETE"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 docente no modifica datos con PUT"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 docente no modifica datos con PATCH"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 docente no modifica datos con DELETE"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 administrador no modifica datos con PUT"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 administrador no modifica datos con PATCH"
+    },
+    {
+      "spec": "inmutabilidad.cy.ts",
+      "name": "HU12-27 administrador no modifica datos con DELETE"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-16 listado completo y recarga con estudiante"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-16 listado completo y recarga sin estudiante"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-18 navega entre páginas sin perder ni repetir incidencias"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-19 filtro individual por examen"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-19 filtro individual por tipo"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-19 filtro individual por rango"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-20 filtros combinados restringen conjuntamente el resultado"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-21 limpiar filtros recupera listado sin restricciones"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-22 rango sin coincidencias muestra estado vacío"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-23 caracteriza extremos inclusivos del rango implementado (pendiente de confirmación HU)"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU12-24 paginación mantiene filtros activos en backend y navegación UI"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-05 registra Expulsión con estudiante sin ingreso previo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-05 registra Problema de identificación con estudiante sin ingreso previo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-05 registra Cambio de ambiente con estudiante sin ingreso previo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-05 registra Otro con estudiante sin ingreso previo"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-06 registra incidencia sin estudiante y sin error obligatorio para él"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-07 búsqueda por código asocia el estudiante correcto"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-07 búsqueda por documento asocia el estudiante correcto"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-07 búsqueda por nombre asocia el estudiante correcto"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-08 búsqueda desconocida no ofrece estudiantes ni registra"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-09 cambiar búsqueda limpia la asociación anterior"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-10 id_examen vacío muestra mensaje obligatorio en UI"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-11 endpoint rechaza id_examen vacío sin persistir"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-10 tipo_incidencia vacío muestra mensaje obligatorio en UI"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-11 endpoint rechaza tipo_incidencia vacío sin persistir"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-10 descripcion_motivo vacío muestra mensaje obligatorio en UI"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-11 endpoint rechaza descripcion_motivo vacío sin persistir"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-12 UI rechaza descripción compuesta solo por espacios"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-12 endpoint rechaza descripción compuesta solo por espacios"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-13 cancelar el formulario no crea incidencia"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-14 el cliente no suplanta reportante ni fija fecha del servidor"
+    },
+    {
+      "spec": "registro.cy.ts",
+      "name": "HU12-15 formulario no tiene controles para fecha, hora o reportante"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU12-28 listado, filtros y formulario utilizables en móvil"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU12-28 listado, filtros y formulario utilizables en tablet"
+    },
+    {
+      "spec": "vacio.cy.ts",
+      "name": "HU12-17 listado vacío permite abrir registro"
+    }
+  ]
+}

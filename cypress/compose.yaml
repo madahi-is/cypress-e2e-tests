@@ -1,0 +1,78 @@
+# Instancia exclusiva E2E; ejecutar con -p income-e2e.
+name: income-e2e
+services:
+  web:
+    image: docker.io/library/httpd:2.4.62
+    depends_on: [php-fpm]
+    ports: ["8082:80"]
+    volumes:
+      - ${E2E_LARAVEL_PATH:-../../income-control-system}:/var/www:ro
+      - ./apache.conf:/usr/local/apache2/conf/httpd.conf:Z,ro
+      - e2e-storage:/var/www/storage:ro
+  php-fpm:
+    image: localhost/income-control-system_php-fpm:latest
+    userns_mode: keep-id
+    user: "${UID:-1000}:${GID:-1000}"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: ${E2E_LARAVEL_ENV:-../../income-control-system/.env}
+    environment: &e2e-env
+      APP_ENV: local
+      APP_URL: http://localhost:8082
+      APP_CONFIG_CACHE: /tmp/e2e-config.php
+      APP_ROUTES_CACHE: /tmp/e2e-routes.php
+      APP_EVENTS_CACHE: /tmp/e2e-events.php
+      APP_SERVICES_CACHE: /tmp/e2e-services.php
+      APP_PACKAGES_CACHE: /tmp/e2e-packages.php
+      DB_CONNECTION: pgsql
+      DB_HOST: postgres
+      DB_DATABASE: app_e2e
+      DB_USERNAME: nath
+      DB_PASSWORD: secret
+      DB_URL: ""
+      SESSION_DRIVER: database
+      SESSION_COOKIE: income_e2e_session
+      CACHE_STORE: array
+      E2E_DB_DATABASE: app_e2e
+    volumes:
+      - ${E2E_LARAVEL_PATH:-../../income-control-system}:/var/www:ro
+      - e2e-storage:/var/www/storage
+  runner:
+    build:
+      context: ..
+      dockerfile: cypress/Containerfile
+    image: localhost/income-e2e-runner:latest
+    userns_mode: keep-id
+    user: "${UID:-1000}:${GID:-1000}"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: ${E2E_LARAVEL_ENV:-../../income-control-system/.env}
+    environment:
+      <<: *e2e-env
+      E2E_BASE_URL: http://web
+      E2E_LARAVEL_ROOT: /var/www
+    volumes:
+      - ${E2E_LARAVEL_PATH:-../../income-control-system}:/var/www:ro
+      - e2e-storage:/var/www/storage
+      - ../:/e2e:z
+    working_dir: /e2e
+    tty: true
+    command: bash
+  postgres:
+    image: docker.io/library/postgres:15.10
+    environment:
+      POSTGRES_DB: app_e2e
+      POSTGRES_USER: nath
+      POSTGRES_PASSWORD: secret
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nath -d app_e2e"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - e2e-postgres:/var/lib/postgresql/data:Z
+volumes:
+  e2e-postgres:
+  e2e-storage:

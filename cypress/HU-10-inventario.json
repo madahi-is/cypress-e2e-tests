@@ -1,0 +1,130 @@
+{
+  "note": "Inventario estático de casos registrados; no ejecuta callbacks de tests ni produce resultados Cypress.",
+  "count": 31,
+  "cases": [
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU10-01 · administrador llega desde Grupos al detalle y sus acciones"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU10-02 docente responsable · UI, URL y acciones directas denegadas"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU10-02 control · UI, URL y acciones directas denegadas"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU10-02 estudiante del grupo · UI, URL y acciones directas denegadas"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU10-03 · sin sesión no accede al detalle ni inscribe o da de baja"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-18 · baja por UI persiste sin borrar estudiante, grupo u otras inscripciones"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-19 · DELETE directo realiza únicamente la baja elegida y coincide con la UI"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-20 · no elimina la inscripción usando una URL de otro grupo"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-21 GET · grupo inexistente rechazado sin modificar datos"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-21 POST · grupo inexistente rechazado sin modificar datos"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-21 DELETE · grupo inexistente rechazado sin modificar datos"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-22 · inscripción inexistente rechazada sin modificar datos"
+    },
+    {
+      "spec": "baja.cy.ts",
+      "name": "HU10-23 · cancelar baja conserva la inscripción después de recargar"
+    },
+    {
+      "spec": "busqueda.cy.ts",
+      "name": "HU10-04 código · busca y conserva resultados correctos al recargar"
+    },
+    {
+      "spec": "busqueda.cy.ts",
+      "name": "HU10-04 nombre · busca y conserva resultados correctos al recargar"
+    },
+    {
+      "spec": "busqueda.cy.ts",
+      "name": "HU10-04 apellido · busca y conserva resultados correctos al recargar"
+    },
+    {
+      "spec": "busqueda.cy.ts",
+      "name": "HU10-05 · término inexistente muestra búsqueda sin resultados y no cambia datos"
+    },
+    {
+      "spec": "busqueda.cy.ts",
+      "name": "HU10-06 · limpiar búsqueda restaura el buscador y conserva el listado"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-07 · inscripción por UI persiste después de recargar"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-08 · POST autenticado válido persiste y coincide con el listado UI"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-09 · UI excluye al inscrito; endpoint rechaza duplicado con mensaje exacto"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-10 · UI rechaza otro grupo de la misma Asignatura y Gestión con mensaje exacto"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-11 · endpoint rechaza otro grupo de la misma Asignatura y Gestión con mensaje exacto"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-12 · permite inscribir simultáneamente en distintas asignaturas de la misma Gestión"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-13 ausente · servidor valida el estudiante sin alterar inscripciones"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-13 inexistente · servidor valida el estudiante sin alterar inscripciones"
+    },
+    {
+      "spec": "inscripcion.cy.ts",
+      "name": "HU10-13 no entero · servidor valida el estudiante sin alterar inscripciones"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU10-14 · lista código, nombres y apellidos reales de los inscritos"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU10-15 · pagina todos los inscritos sin omisiones y conserva la búsqueda al navegar"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU10-16 · grupo sin inscritos muestra estado vacío y permite buscar"
+    },
+    {
+      "spec": "listado.cy.ts",
+      "name": "HU10-17 · exactamente 15 inscritos caben en una página después de una baja"
+    }
+  ]
+}

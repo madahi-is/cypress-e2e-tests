@@ -1,0 +1,9 @@
+# Runner E2E separado: no altera la imagen workspace del equipo.
+FROM localhost/income-control-system_workspace:latest
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libgtk-3-0t64 libgbm-dev libnotify-dev libnss3 libxss1 \
+    libasound2t64 libxtst6 xauth xvfb \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /e2e
+USER www

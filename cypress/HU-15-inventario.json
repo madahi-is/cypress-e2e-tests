@@ -1,0 +1,238 @@
+{
+  "note": "Inventario estático: no ejecuta callbacks ni representa resultados Cypress.",
+  "count": 58,
+  "cases": [
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-01 alta administrativa crea cuenta temporal de estudiante"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-11 contraseña obligatoria bloquea panel hasta cambiarla y persiste el cambio"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-12 después de cambiar contraseña termina únicamente en el panel QR"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-02 login dirige únicamente al panel QR propio"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /admin/dashboard"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /docente/dashboard"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /control/dashboard"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /dashboard"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /mis-examenes"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /usuarios"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /estudiantes"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /examenes"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /asignaturas"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /ambientes"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /grupos"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /incidencias"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /registro-ingreso"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-03 acceso directo rechazado o panel permitido: /panel-asistencia"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-16 no ofrece enlaces a módulos prohibidos"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-04 no existe autorregistro público por UI ni petición"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU15-17 estudiante no crea cuentas o estudiantes mediante peticiones"
+    },
+    {
+      "spec": "desactivacion.cy.ts",
+      "name": "HU15-10 · la baja revoca el acceso de la sesión existente y futuros logins"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-08 subir JPG persiste foto y referencia tras recarga"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-08 subir PNG persiste foto y referencia tras recarga"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-27 foto persistida se muestra en identificación de control (API y UI)"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-09 UI rechaza formato y conserva foto previa y archivos"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-09 UI rechaza tamaño y conserva foto previa y archivos"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-28 backend rechaza formato inválido sin guardar ni perder foto previa"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-24 carga con id ajeno no modifica foto del otro estudiante"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-25 visitante no puede cargar fotografía"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-29 caracteriza frontera frontend limite-menos (política servidor pendiente)"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-29 caracteriza frontera frontend limite-exacto (política servidor pendiente)"
+    },
+    {
+      "spec": "foto.cy.ts",
+      "name": "HU15-29 caracteriza frontera frontend limite-mas (política servidor pendiente)"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-13 Ana muestra nombres, apellidos y código propios"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-14 Ana muestra CI correcto"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-20 Ana solo recibe su QR y foto aunque query indique otro perfil"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-13 Bruno muestra nombres, apellidos y código propios"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-14 Bruno muestra CI correcto"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-20 Bruno solo recibe su QR y foto aunque query indique otro perfil"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-18 no tiene controles de edición de identidad"
+    },
+    {
+      "spec": "identidad.cy.ts",
+      "name": "HU15-19 peticiones no permiten modificar datos personales propios"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-05 imagen vigente cargada y legible junto a identidad"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-05 decodifica PNG real independientemente del layout"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-06 identificadores distintos para estudiantes distintos"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-21 QR no es CI, código ni fórmula predecible vigente"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-07 regenerar cambia QR persistido y sobrevive a recarga"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-22 QR anterior no resuelve y nuevo funciona con identificación real"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-23 segunda regeneración invalida ambos identificadores anteriores"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-24 payload ajeno no regenera QR de otro estudiante"
+    },
+    {
+      "spec": "qr.cy.ts",
+      "name": "HU15-25 visitante no regenera QR"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-30 móvil identidad, QR y controles accesibles sin desbordamiento"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-30 móvil CI visible de forma independiente"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-31 móvil selección y subida de foto funcionan"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-32 móvil regeneración funciona y persiste"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-30 tablet identidad, QR y controles accesibles sin desbordamiento"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-30 tablet CI visible de forma independiente"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-31 tablet selección y subida de foto funcionan"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU15-32 tablet regeneración funciona y persiste"
+    }
+  ]
+}

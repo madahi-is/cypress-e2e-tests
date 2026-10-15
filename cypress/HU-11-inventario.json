@@ -1,0 +1,182 @@
+{
+  "note": "Inventario estático; no ejecuta callbacks ni representa resultados Cypress.",
+  "count": 44,
+  "cases": [
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-01 personal de control de ingreso · tiene acceso al módulo por el menú"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-02 personal de control de ingreso · URL y endpoints permiten verificar y guardar con el actor correcto"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-01 docente · tiene acceso al módulo por el menú"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-02 docente · URL y endpoints permiten verificar y guardar con el actor correcto"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-01 administrador · tiene acceso al módulo por el menú"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-02 administrador · URL y endpoints permiten verificar y guardar con el actor correcto"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-03 · estudiante no accede por menú, URL ni endpoints"
+    },
+    {
+      "spec": "acceso.cy.ts",
+      "name": "HU11-04 · visitante no accede ni registra ingresos"
+    },
+    {
+      "spec": "confirmacion.cy.ts",
+      "name": "HU11-13 muestra identidad y foto sin registrar ni permitir editar la hora"
+    },
+    {
+      "spec": "confirmacion.cy.ts",
+      "name": "HU11-14 cancelar no registra y permite buscar otro estudiante"
+    },
+    {
+      "spec": "confirmacion.cy.ts",
+      "name": "HU11-15 confirmar persiste todas las relaciones y la hora del servidor"
+    },
+    {
+      "spec": "confirmacion.cy.ts",
+      "name": "HU11-16 el cliente no puede imponer hora ni usuario"
+    },
+    {
+      "spec": "confirmacion.cy.ts",
+      "name": "HU11-17 registra dos estudiantes sin recargar ni perder examen y ambiente"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-12 guardado directo rechaza estudiante no habilitado: Carla"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-12 guardado directo rechaza estudiante no habilitado: Diego"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-12 guardado directo rechaza estudiante no habilitado: Gina"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-12 guardado directo rechaza estudiante no habilitado: Elena"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-12 guardado directo rechaza estudiante no habilitado: Fabio"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-23 validar exige id_examen"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-23 validar exige dato_estudiante"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-24 guardar exige id_estudiante"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-24 guardar exige id_examen_ambiente"
+    },
+    {
+      "spec": "defensivos.cy.ts",
+      "name": "HU11-25 ambiente de examen inexistente se rechaza como entrada inválida"
+    },
+    {
+      "spec": "duplicados.cy.ts",
+      "name": "HU11-18 rechaza segundo ingreso en el mismo ambiente"
+    },
+    {
+      "spec": "duplicados.cy.ts",
+      "name": "HU11-19 reenvío secuencial directo en el mismo ambiente conserva un registro"
+    },
+    {
+      "spec": "duplicados.cy.ts",
+      "name": "HU11-18 rechaza segundo ingreso en otro ambiente"
+    },
+    {
+      "spec": "duplicados.cy.ts",
+      "name": "HU11-19 reenvío secuencial directo en otro ambiente conserva un registro"
+    },
+    {
+      "spec": "duplicados.cy.ts",
+      "name": "HU11-20 el endpoint directo devuelve el mensaje exigido con hora previa"
+    },
+    {
+      "spec": "duplicados.cy.ts",
+      "name": "HU11-21 permite al mismo estudiante ingresar en otro examen habilitado"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU11-22 flujo completo usable en móvil"
+    },
+    {
+      "spec": "responsive.cy.ts",
+      "name": "HU11-22 flujo completo usable en tablet"
+    },
+    {
+      "spec": "seleccion.cy.ts",
+      "name": "HU11-05 · examen y ambiente obligatorios antes de identificar"
+    },
+    {
+      "spec": "seleccion.cy.ts",
+      "name": "HU11-06 · las opciones de ambiente corresponden exclusivamente al examen elegido"
+    },
+    {
+      "spec": "seleccion.cy.ts",
+      "name": "HU11-07 · cambiar examen limpia la selección incompatible de ambiente"
+    },
+    {
+      "spec": "seleccion.cy.ts",
+      "name": "HU11-08 · examen sin ambientes no permite iniciar"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-09 código · resuelve al mismo estudiante sin ingreso previo"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-09 documento · resuelve al mismo estudiante sin ingreso previo"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-09 QR · resuelve al mismo estudiante sin ingreso previo"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-10 · dato desconocido muestra el mensaje exacto y no escribe"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-11 Carla · rechaza habilitación inválida y no crea ingreso"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-11 Diego · rechaza habilitación inválida y no crea ingreso"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-11 Gina · rechaza habilitación inválida y no crea ingreso"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-11 Elena · rechaza habilitación inválida y no crea ingreso"
+    },
+    {
+      "spec": "verificacion.cy.ts",
+      "name": "HU11-11 Fabio · rechaza habilitación inválida y no crea ingreso"
+    }
+  ]
+}

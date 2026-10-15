@@ -1,0 +1,27 @@
+{
+  "name": "income-control-system-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "e2e:open": "cypress open",
+    "e2e:run": "cypress run --spec \"cypress/e2e/HU-15/*.cy.ts\"",
+    "e2e:types": "tsc --project cypress/tsconfig.json",
+    "e2e:hu9": "cypress run --spec \"cypress/e2e/HU-9/*.cy.ts\"",
+    "e2e:hu15": "cypress run --spec \"cypress/e2e/HU-15/*.cy.ts\"",
+    "e2e:all": "cypress run",
+    "e2e:hu10": "cypress run --spec \"cypress/e2e/HU-10/*.cy.ts\"",
+    "e2e:hu11": "cypress run --spec \"cypress/e2e/HU-11/*.cy.ts\"",
+    "e2e:hu12": "cypress run --spec \"cypress/e2e/HU-12/*.cy.ts\"",
+    "e2e:hu13": "cypress run --spec \"cypress/e2e/HU-13/*.cy.ts\"",
+    "e2e:hu14": "cypress run --spec \"cypress/e2e/HU-14/*.cy.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "26.6.4",
+    "@types/pngjs": "6.0.5",
+    "cypress": "16.1.1",
+    "jsqr": "1.4.0",
+    "pngjs": "7.0.0",
+    "typescript": "7.0.2"
+  }
+}
